@@ -1,0 +1,60 @@
+name: eztro
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.11.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  url_launcher: ^6.3.0
+  cupertino_icons: ^1.0.8
+  lottie: ^3.1.2
+  http: ^1.6.0
+  image_picker: ^1.2.1
+  intl: ^0.20.2
+  fl_chart: ^1.2.0
+  mapbox_maps_flutter: ^2.21.1
+  geolocator: ^13.0.0
+  shared_preferences: ^2.5.2
+  webview_flutter: ^4.10.0
+  shimmer: ^3.0.0
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.3.5
+  qr_flutter: ^4.1.0
+  google_generative_ai: ^0.4.7
+  flutter_markdown: ^0.7.7+1
+  flutter_markdown_plus: ^1.0.7
+  flutter_dotenv: ^6.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  riverpod_generator: ^2.4.0
+  build_runner: ^2.4.9
+
+flutter:
+  uses-material-design: true
+
+  # Khai báo Assets
+  assets:
+    # - assets/images/
+    - assets/fonts/
+    - assets/data/
+    - assets/lottie/
+    - .env
+
+  # Khai báo Fonts
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.otf
+        - asset: assets/fonts/Montserrat-SemiBold.otf
+          weight: 600
+        - asset: assets/fonts/Montserrat-Bold.otf
+          weight: 700

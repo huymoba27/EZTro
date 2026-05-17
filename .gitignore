@@ -1,0 +1,64 @@
+# --- General & IDEs ---
+.DS_Store
+.idea/
+.vscode/
+*.log
+Thumbs.db
+*.bak
+*.tmp
+
+# --- Local tool output ---
+/tools/auto_tests/logs/
+/tools/auto_tests/*.log
+
+# --- PHP/Backend ---
+/backend_api/uploads/
+/uploads/
+/vendor/
+/backend_api/vendor/
+config/config.php
+config/payment_config.php
+config/config_local.php
+/backend_api/payment/webhook_log.txt
+
+# --- Environment & Security ---
+.env
+.env.*
+!.env.example
+!eztro/.env.example
+*.key
+*.pem
+*.jks
+*.keystore
+key.properties
+google-services.json
+GoogleService-Info.plist
+eztro/lib/core/constants/app_secrets.dart
+
+# --- Flutter (eztro) ---
+/.dart_tool/
+/build/
+/flutter_*.png
+*.apk
+*.aab
+*.ipa
+/eztro/.dart_tool/
+/eztro/.flutter-plugins
+/eztro/.flutter-plugins-dependencies
+/eztro/.packages
+/eztro/build/
+/eztro/.pub-cache/
+/eztro/ios/Flutter/Generated.xcconfig
+/eztro/ios/Flutter/flutter_export_environment.sh
+/eztro/android/app/key.properties
+/eztro/android/local.properties
+/eztro/android/.gradle
+/eztro/ios/.generated
+/eztro/windows/flutter/ephemeral/
+/eztro/linux/flutter/ephemeral/
+/eztro/macos/Flutter/ephemeral/
+
+# --- Optional mobile_app folder (if it exists) ---
+/mobile_app/.dart_tool/
+/mobile_app/build/
+/mobile_app/.packages
