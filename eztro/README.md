@@ -1,17 +1,25 @@
-# tro_app
+# EzTro Flutter App
 
-A new Flutter project.
+Thư mục này chứa ứng dụng Flutter client của EzTro.
 
-## Getting Started
+Để xem hướng dẫn cài đặt đầy đủ cho cả backend, cấu hình môi trường, ghi chú khi public repo và các giới hạn hiện tại, hãy xem [README chính](../README.md).
 
-This project is a starting point for a Flutter application.
+## Chạy nhanh
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+cd eztro
+flutter pub get
+cp .env.example .env
+cp lib/core/constants/app_secrets.example.dart lib/core/constants/app_secrets.dart
+flutter run
+```
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+Cập nhật `eztro/.env` trước khi chạy:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```env
+MAPBOX_ACCESS_TOKEN=YOUR_MAPBOX_TOKEN
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+SERVER_URL=http://localhost/ql_tro
+```
+
+Nếu test trên điện thoại thật, `localhost` sẽ trỏ tới chính điện thoại. Hãy dùng IP LAN của máy tính hoặc URL tunnel cho `SERVER_URL`.
